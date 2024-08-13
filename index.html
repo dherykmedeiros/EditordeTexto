@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editor de Texto</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <nav class="toolbar" aria-label="Editor de Texto">
+            <ul class="tool-list">
+                <li class="tool">
+                    <button type="button" data-command="justifyLeft" class="tool--btn" aria-label="Alinhar à Esquerda">
+                        <i class="fas fa-align-left"></i>
+                    </button>
+                </li>
+                <li class="tool">
+                    <button type="button" data-command="justifyCenter" class="tool--btn" aria-label="Centralizar">
+                        <i class="fas fa-align-center"></i>
+                    </button>
+                </li>
+                <li class="tool">
+                    <button type="button" data-command="bold" class="tool--btn" aria-label="Negrito">
+                        <i class="fas fa-bold"></i>
+                    </button>
+                </li>
+                <li class="tool">
+                    <button type="button" data-command="italic" class="tool--btn" aria-label="Itálico">
+                        <i class="fas fa-italic"></i>
+                    </button>
+                </li>
+                <li class="tool">
+                    <button type="button" data-command="underline" class="tool--btn" aria-label="Sublinhado">
+                        <i class="fas fa-underline"></i>
+                    </button>
+                </li>
+                <li class="tool">
+                    <button type="button" data-command="insertOrderedList" class="tool--btn" aria-label="Lista Ordenada">
+                        <i class="fas fa-list-ol"></i>
+                    </button>
+                </li>
+                <li class="tool">
+                    <button type="button" data-command="insertUnorderedList" class="tool--btn" aria-label="Lista Não Ordenada">
+                        <i class="fas fa-list-ul"></i>
+                    </button>
+                </li>
+                <li class="tool">
+                    <button type="button" data-command="createlink" class="tool--btn" aria-label="Inserir Link">
+                        <i class="fas fa-link"></i>
+                    </button>
+                </li>
+                
+            </ul>
+        </nav>
+        <div id="output" contenteditable="true" aria-label="Área de Edição de Texto"></div>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
